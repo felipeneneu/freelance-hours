@@ -17,7 +17,7 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'rating' => fake()->randomElement([1,2,3,4,5]),
-            'avatar' => 'https://avatar.iran.liara.run/public'
+            'avatar' => 'https://i.pravatar.cc/'
 
         ];
     }
