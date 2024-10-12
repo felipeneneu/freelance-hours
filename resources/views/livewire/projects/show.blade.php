@@ -1,13 +1,6 @@
 <div>
-    meu component show
-
-    <pre>
-        title: {{ $project->title }}
-
-        description: {!! $project->description !!}
+    <x-project-card :$project />
 
 
-    </pre>
-        {{-- @dump($project) --}}
     
 </div>
