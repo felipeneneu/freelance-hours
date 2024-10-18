@@ -6,21 +6,15 @@ use App\ProjectStatus;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-
 class Project extends Model
 {
-
     use HasFactory;
 
-    public function casts()
-    {
-        return [
-            'tech_stack' => 'array',
-            'status' => ProjectStatus::class,
-            'ends_at' => 'datetime',
-        ];
-    }
+    protected $casts = [
+        'tech_stack' => 'array',
+        'status' => ProjectStatus::class, // Certifique-se de que ProjectStatus esteja implementado corretamente
+        'ends_at' => 'datetime',
+    ];
 
     public function author()
     {

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->dateTime('ends_at');
+            $table->dateTime('ends_at')->now()->addDays(7);
             $table->string('status')->default('open');
             $table->json('tech_stack');
             $table->foreignIdFor(User::class, 'created_by')->constrained('users');

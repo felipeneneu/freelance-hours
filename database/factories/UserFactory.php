@@ -16,7 +16,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'rating' => fake()->randomElement([1,2,3,4,5]),
+            'rating' => fake()->randomElement([1, 2, 3, 4, 5], random_int(1, 5)),          
             'avatar' => 'https://i.pravatar.cc/'
 
         ];
