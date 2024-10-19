@@ -1,7 +1,7 @@
 @props(['project'])
 <x-ui.card>
-    <div class="flex items-start justify-between pb-4">
-        <div class="flex flex-col gap-[16px]">
+<div class="items-start justify-between block pb-4 md:flex">
+        <div class="md:flex md:flex-col gap-[16px] block ">
             <div>
 
                 <x-projects.status :status="$project->status" />
@@ -15,7 +15,7 @@
                 Publicado {{ $project->created_at->diffForHumans() }}
                 <div class="flex items-center justify-between mt-4 text-[14px]">
                     <div class="text-[#8C8C9A]  leading-6">Encerra em:</div>
-                    <div class="font-bold flex items-center space-x-1">
+<div class="flex items-center space-x-1 font-bold">
                         <span class="text-white ">01</span><span>:</span>
                         <span class="text-white ">12</span><span>:</span>
                         <span class="text-white ">26</span><span>:</span>

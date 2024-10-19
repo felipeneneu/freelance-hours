@@ -1,7 +1,7 @@
 @props(['project'])
-<x-ui.card class="col-span-2 ">
+<x-ui.card class="col-span-1 md:col-span-2 ">
     <div class="flex items-start justify-between pb-4">
-        <div class="flex flex-col gap-[16px]">
+<div class="md:flex md:flex-col gap-[16px] block">
             <div>
                 <span class="bg-[#C0F7B4] text-[#1D8338] rounded-full font-bold text-center uppercase py-[6px] px-[14px] text-[12px] tracking-wide ">
                     {{ $project->status->label() }}
